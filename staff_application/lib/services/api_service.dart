@@ -7,8 +7,20 @@ class ApiService {
 
   static Future<List<Product>> getProducts() async {
     final res = await http.get(Uri.parse("$baseUrl/products"));
-    final List data = jsonDecode(res.body);
-    return data.map((e) => Product.fromJson(e)).toList();
+
+    print("📥 Status Code: ${res.statusCode}");
+    print("📥 Body: ${res.body}");
+
+    if (res.statusCode == 200) {
+      final decoded = jsonDecode(res.body);
+
+      // extract only the list
+      final List data = decoded['data'];
+
+      return data.map((e) => Product.fromJson(e)).toList();
+    } else {
+      throw Exception("Failed to load products");
+    }
   }
 
   static Future<String> placeOrder(String productId, int qty) async {
@@ -20,7 +32,7 @@ class ApiService {
 
     final data = jsonDecode(res.body);
 
-    if (res.statusCode == 200) {
+    if (res.statusCode == 200 && data['success'] == true) {
       return "success";
     } else {
       return data['message'] ?? "Order failed";
