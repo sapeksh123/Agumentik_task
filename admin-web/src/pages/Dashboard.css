@@ -1,0 +1,40 @@
+.dashboard {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+/* 💻 Large screens */
+@media (min-width: 1400px) {
+  .dashboard {
+    max-width: 1200px;
+  }
+}
