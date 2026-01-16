@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-/* ===== Desktop / Tablet ===== */
+
 .product-table {
   width: 100%;
   border-collapse: collapse;
@@ -43,8 +43,8 @@
   color: #777;
 }
 
-/* ===== 📱 Mobile Row-wise Layout ===== */
 @media (max-width: 768px) {
+
   .product-table,
   .product-table thead,
   .product-table tbody,
@@ -56,7 +56,7 @@
   }
 
   .product-table thead {
-    display: none; /* hide table header */
+    display: none;
   }
 
   .product-table tr {

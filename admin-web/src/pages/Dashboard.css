@@ -32,7 +32,7 @@
   }
 }
 
-/* 💻 Large screens */
+
 @media (min-width: 1400px) {
   .dashboard {
     max-width: 1200px;

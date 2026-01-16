@@ -16,7 +16,7 @@ export default function Dashboard() {
         loadProducts();
 
         socket.on("stockUpdated", () => {
-            loadProducts(); // real-time update
+            loadProducts();
         });
 
         return () => socket.off("stockUpdated");

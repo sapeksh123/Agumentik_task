@@ -55,7 +55,6 @@ export const placeOrder = async (req, res) => {
             });
         }
 
-        // 🔐 ATOMIC OPERATION (MODULE-4 CORE)
         const product = await Product.findOneAndUpdate(
             {
                 _id: productId,
