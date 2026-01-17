@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  static const baseUrl = "http://10.0.2.2:5000/api";
+  static const baseUrl = "https://agumentik-task-v9i2.onrender.com/api";
 
   static Future<String> signup(
     String name,

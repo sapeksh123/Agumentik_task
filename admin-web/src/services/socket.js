@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 // WebSocket connection configuration
-const SOCKET_URL = "http://localhost:5000";
+const SOCKET_URL = "https://agumentik-task-v9i2.onrender.com";
 
 // Create socket instance with auto-reconnect configuration
 const socket = io(SOCKET_URL, {

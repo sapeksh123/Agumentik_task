@@ -1,6 +1,6 @@
 
 import { getToken } from "./auth";
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://agumentik-task-v9i2.onrender.com/api";
 
 /* ================= PRODUCTS ================= */
 

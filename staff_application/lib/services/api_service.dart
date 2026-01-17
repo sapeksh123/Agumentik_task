@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../model/product.dart';
 
 class ApiService {
-  static const baseUrl = "http://10.0.2.2:5000/api";
+  static const baseUrl = "https://agumentik-task-v9i2.onrender.com/api";
 
   static Future<List<Product>> getProducts() async {
     final res = await http.get(Uri.parse("$baseUrl/products"));

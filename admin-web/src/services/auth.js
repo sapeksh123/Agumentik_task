@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://agumentik-task-v9i2.onrender.com/api";
 
 export const login = async (email, password) => {
   const res = await fetch(`${API_URL}/auth/login`, {
